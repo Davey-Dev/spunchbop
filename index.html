@@ -25,6 +25,12 @@
                     document.getElementById("sponchimg").src = "images/wtf.png"
                 } 
             }
+            
+            document.addEventListener('keydown', (e) => {
+                if (e.code === "Space") {
+                    play();
+                }
+            });
         </script>
         <img id="sponchimg" src="images/spunchbop.jpg" alt="spunchbop" onclick="play()">
         <audio id="audio" src="audio/boowomp.mp3"></audio>
