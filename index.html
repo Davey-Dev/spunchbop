@@ -19,19 +19,20 @@
                 margin-right: auto;
                 width: 50%;
             }
+            ul {
+                text-align: center;
+            }
+            
+            button {
+                margin: auto;
+            }
         </style>
     </head>
     <body>
         <script>
             function play() {
                 var audio = document.getElementById("audio");
-                audio.play();
-                if(document.getElementById("sponchimg").src.includes("wtf.png")) {
-                    document.getElementById("sponchimg").src = "images/spunchbop.jpg";
-                }
-                if(Math.floor(Math.random() * 10000) == 0) {
-                    document.getElementById("sponchimg").src = "images/wtf.png"
-                } 
+                audio.play(); 
             }
             
             document.addEventListener('keydown', (e) => {
@@ -41,8 +42,12 @@
             });
         </script>
         <img id="sponchimg" src="images/spunchbop.jpg" alt="spunchbop" class="center" onclick="play()">
-        <br>
-        <button id="twitter-share-button" class="center" onclick="window.open(`https://twitter.com/intent/tweet?text=https://www.spunchbop.com`);">Tweet</button>
+        <ul>
+            <button id="twitter" onclick="window.open(`https://twitter.com/intent/tweet?text=https://www.spunchbop.com`);">Tweet</button>
+            <button id="discord" onclick="window.open(`https://www.spunchbop.com/discord`);">Discord</button>
+            <button id="reddit" onclick="window.open(`https://www.spunchbop.com/reddit`);">Reddit</button>
+        </ul>
+        
         <audio id="audio" src="audio/boowomp.mp3"></audio>
     </body>
 </html>
