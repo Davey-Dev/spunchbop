@@ -12,6 +12,14 @@
         <meta name="twitter:title" content="spunchbop">
         <meta name="twitter:image" content="https://www.spunchbop.com/images/spunchbopwide.jpg">
         <meta name="twitter:image:alt" content="spunchbop">
+        <style>
+            .center {
+                display: block;
+                margin-left: auto;
+                margin-right: auto;
+                width: 50%;
+            }
+        </style>
     </head>
     <body>
         <script>
@@ -32,9 +40,9 @@
                 }
             });
         </script>
-        <img id="sponchimg" src="images/spunchbop.jpg" alt="spunchbop" onclick="play()">
+        <img id="sponchimg" src="images/spunchbop.jpg" alt="spunchbop" class="center" onclick="play()">
         <br>
-        <button id="twitter-share-button" onclick="window.open(`https://twitter.com/intent/tweet?text=https://www.spunchbop.com`);">Tweet</button>
+        <button id="twitter-share-button" class="center" onclick="window.open(`https://twitter.com/intent/tweet?text=https://www.spunchbop.com`);">Tweet</button>
         <audio id="audio" src="audio/boowomp.mp3"></audio>
     </body>
 </html>
